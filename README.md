@@ -1,2 +1,42 @@
 # mini_auto
-with an eye for automation
+
+With an eye for automation:
+
+1. Visit https://www.viprbrc.org/brc/vipr_genome_search.spg?method=ShowCleanSearch&decorator=flavi_zika
+2. [x] Genome; [x] Complete Genome Only; Click `Search`
+3. `Display Settings`, select any additional fields that may be useful
+4. [x] Select all XX genomes
+5. `Download`, [x] Tab Delimited - Displayed Columns Only
+6. You will have a "Results.tsv"
+
+
+```
+[[ -d data ]] || mkdir data
+cd data
+mv ~/Downloads Results.tsv .
+
+# List genbanks
+cat Results.tsv | awk -F'\t' '{print $4}' | head -n5
+GenBank Accession
+MT439645
+KU501216
+KX262887
+MT377503
+...
+
+# Fetch genbanks
+
+# Parse genbank into fasta& metadata
+
+# If multi segmented, merge segments; 1 line = 1 sample
+
+# Merge genbank and ViPr metadata (add indicator column for conflicts)
+
+# Add rules/manual curation of conflicts
+
+# Create a cached main metadata file, (only process/pull new Genbanks)
+
+# Call clades per sample?
+
+# Process/subsample for Nextstrain build
+```
