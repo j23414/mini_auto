@@ -110,7 +110,7 @@ sub printEntry(){
     $segment="_$segment";
 
 #    print ">",join("|",$gb,$strain,$subtype,$col_date,$segment),"\n";
-    print ">",join("|",$gb,$strain,$subtype,$col_date),"\n";
+    print ">",join("|",$gb,$sample,$subtype,$col_date),"\n";
     print $fasta,"\n";
 
     # = Reset variables
