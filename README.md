@@ -12,6 +12,12 @@ With an eye for automation:
 5. `Download`, [x] Tab Delimited - Displayed Columns Only
 6. You will have a "Results.tsv"
 
+![](imgs/zika_ViPR_results.png)
+
+Or fetch fasta and take the `augur parse` route
+
+![](imgs/zika_ViPR_download.png)
+
 
 ```
 [[ -d data ]] || mkdir data
