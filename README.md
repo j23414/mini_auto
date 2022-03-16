@@ -2,8 +2,11 @@
 
 With an eye for automation:
 
-1. Visit https://www.viprbrc.org/brc/vipr_genome_search.spg?method=ShowCleanSearch&decorator=flavi_zika
+1. Visit [https://www.viprbrc.org/brc/vipr_genome_search.spg?method=ShowCleanSearch&decorator=flavi_zika](https://www.viprbrc.org/brc/vipr_genome_search.spg?method=ShowCleanSearch&decorator=flavi_zika)
 2. [x] Genome; [x] Complete Genome Only; Click `Search`
+
+![](imgs/zika_ViPR.png)
+
 3. `Display Settings`, select any additional fields that may be useful
 4. [x] Select all XX genomes
 5. `Download`, [x] Tab Delimited - Displayed Columns Only
