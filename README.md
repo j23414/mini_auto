@@ -18,6 +18,9 @@ Or fetch fasta and take the `augur parse` route
 
 ![](imgs/zika_ViPR_download.png)
 
+ViPR seems to be migrating to a new website. I haven't found a length filter.
+
+![](imgs/new_zikadb.png)
 
 ```
 [[ -d data ]] || mkdir data
