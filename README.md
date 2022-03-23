@@ -1,22 +1,38 @@
 # mini_auto
 
-With an eye for automation:
+With a focus on automation:
 
-1. Visit [https://www.viprbrc.org/brc/vipr_genome_search.spg?method=ShowCleanSearch&decorator=flavi_zika](https://www.viprbrc.org/brc/vipr_genome_search.spg?method=ShowCleanSearch&decorator=flavi_zika)
-2. [x] Genome; [x] Complete Genome Only; Click `Search`
+1. Pull new sequences from [VIPR Website](https://www.viprbrc.org/brc/vipr_genome_search.spg?method=ShowCleanSearch&decorator=flavi_zika):
 
-![](imgs/zika_ViPR.png)
+  ![](imgs/zika_ViPR.png)
 
+2. Download formatted fasta files:
+
+  ![](imgs/zika_ViPR_download.png)
+
+  You will have a `Genomic.fasta` file which will need to processed by `augur parse`.
+
+2b. Alternatively, download the metadata and pull Genbanks manually:
+
+  ![](imgs/zika_ViPR_results.png)
+
+  You will have a `Results.tsv`.
+  
+  ```
+  # List genbanks
+  cat Results.tsv | awk -F'\t' '{print $4}' > zika_gb.ids
+  bin/batchFetchGB.sh zika_gb.ids > zika.gb
+  bin/procGenbank.pl zika.gb > zika.fasta
+  ```
+
+<!--
 3. `Display Settings`, select any additional fields that may be useful
 4. [x] Select all XX genomes
 5. `Download`, [x] Tab Delimited - Displayed Columns Only
 6. You will have a "Results.tsv"
+-->
 
-![](imgs/zika_ViPR_results.png)
-
-Or fetch fasta and take the `augur parse` route
-
-![](imgs/zika_ViPR_download.png)
+## New Website
 
 ViPR seems to be migrating to a new website. I haven't found a length filter.
 
