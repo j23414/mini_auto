@@ -1,5 +1,17 @@
 # mini_auto
 
+### Summary
+
+| Pathogen | Last Count | Last Update |
+|:--|--:|:--|
+| [zika](https://nextstrain.org/zika) | 1126 | 2022-03-25 |
+| [measles](https://nextstrain.org/measles) | 443 | 2022-03-24 |
+| [dengue](https://nextstrain.org/dengue/denv1) | | 2020-12-14* |
+
+* Blocking issue: dengue clades
+
+### Instructions
+
 With a focus on automation:
 
 1. Pull new sequences from [VIPR Website](https://www.viprbrc.org/brc/vipr_genome_search.spg?method=ShowCleanSearch&decorator=flavi_zika):
