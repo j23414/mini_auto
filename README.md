@@ -2,11 +2,11 @@
 
 ### Summary
 
-| Pathogen | Last Count | Last Update |
-|:--|--:|:--|
-| [zika](https://nextstrain.org/zika) | 1126 | 2022-03-25 |
-| [measles](https://nextstrain.org/measles) | 443 | 2022-03-24 |
-| [dengue](https://nextstrain.org/dengue/denv1) | | 2020-12-14* |
+| Pathogen | Last Count | Last Update | Last Check |
+|:--|--:|:--|:--|
+| [zika](https://nextstrain.org/zika) | 1119 | 2022-03-25 | 2022-06-13 |
+| [measles](https://nextstrain.org/measles) | 443 | 2022-03-24 | |
+| [dengue](https://nextstrain.org/dengue/denv1) | | 2020-12-14* | |
 
 * Blocking issue: dengue clades
 
