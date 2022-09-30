@@ -4,7 +4,7 @@
 
 | Pathogen | Last Count | Last Update | Last Check |
 |:--|--:|:--|:--|
-| [zika](https://nextstrain.org/zika) | 1122 | 2022-08-01 |  |
+| [zika](https://nextstrain.org/zika) | 1126 | 2022-09-30 |  |
 | [measles](https://nextstrain.org/measles) | 666 | 2022-08-02 | |
 | [dengue](https://nextstrain.org/dengue/denv1) | | 2020-12-14* | |
 | [rsv]() | 3940 | |
