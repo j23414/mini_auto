@@ -6,7 +6,7 @@
 |:--|--:|:--|:--|
 | [zika](https://nextstrain.org/zika) | 1126 | 2022-09-30 |  |
 | [measles](https://nextstrain.org/measles) | 666 | 2022-08-02 | |
-| [dengue](https://nextstrain.org/dengue/denv1) | | 2020-12-14* | |
+| [dengue](https://nextstrain.org/dengue/denv1) | 10877 | 2020-10-10 | |
 | [rsv]() | 3940 | |
 
 * Blocking issue: dengue clades
