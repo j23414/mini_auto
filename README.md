@@ -2,14 +2,45 @@
 
 ### Summary
 
-| Pathogen | Last Count | Last Update | Last Check |
+| Pathogen | Last Count | Last Update | BV-BRC |
 |:--|--:|:--|:--|
-| [zika](https://nextstrain.org/zika) | 1126 | 2022-09-30 |  |
-| [measles](https://nextstrain.org/measles) | 666 | 2022-08-02 | |
-| [dengue](https://nextstrain.org/dengue/denv1) | 10877 | 2020-10-10 | |
+| [zika](https://nextstrain.org/zika) | 1126 | 2022-09-30 | [check zika](https://www.bv-brc.org/view/Taxonomy/64320#view_tab=genomes&filter=and(gt(collection_date,2013),gt(genome_length,5000))) |
+| [measles](https://nextstrain.org/measles) | 666 | 2022-08-02 | [check measles](https://www.bv-brc.org/view/GenomeList/?keyword(measles)#view_tab=genomes&filter=gt(genome_length,5000))|
+| [dengue](https://nextstrain.org/dengue/denv1) | 10877 | 2020-10-10 | [check dengue](https://www.bv-brc.org/view/Taxonomy/12637#view_tab=genomes&filter=gt(genome_length,5000)) |
 | [rsv]() | 3940 | |
 
-* Blocking issue: dengue clades
+## BV-BRC
+
+Search for the pathogen on BV-BRC, and apply any relevant filters:
+
+![](imgs/BV-BRC_zika.png)
+
+Or simply edit the url with your filters:
+
+[https://www.bv-brc.org/view/GenomeList/?keyword(zika)#view_tab=genomes&filter=and(gt(genome_length,5000),gt(collection_date,2013))](https://www.bv-brc.org/view/GenomeList/?keyword(zika)#view_tab=genomes&filter=and(gt(genome_length,5000),gt(collection_date,2013)))
+
+Download the fasta file, notice how the header field is set and not modifiable:
+
+![](imgs/BV-BRC_zika_download.png)
+
+Notice how the header field is different from ViPR and not modifiable. (example from dengue)
+
+```
+head BVBRC_genome_sequence.fasta
+```
+
+```
+>accn|KY829115   Dengue virus 1 isolate H.sapiens-wt/BLM/2016/MA-WGS16-006-SER, complete genome.   [Dengue virus 1 H.sapiens-wt/BLM/2016/MA-WGS16-006-SER strain Dengue virus 1/H.sapiens-wt/BLM/2016/MA-WGS16-006-SER | 11053.9479]
+agttgttagtctacgtggaccgacaagaacagtttcgaatcggaagcttgcttaacgtag
+ttctaacagttttttattagagagcagatctctgatgaacaaccaacggaaaaagacggg
+tcgaccgtctttcaatatgctgaaacgcgcgagaaaccgcgtgtcaactggttcacagtt
+```
+
+Or possibly figure out BV-BRC commandline
+
+* https://www.bv-brc.org/docs/cli_tutorial/index.html
+
+## ViPR (outdated)
 
 ### Instructions
 
@@ -39,11 +70,6 @@ With a focus on automation:
   ```
 
 <!--
-3. `Display Settings`, select any additional fields that may be useful
-4. [x] Select all XX genomes
-5. `Download`, [x] Tab Delimited - Displayed Columns Only
-6. You will have a "Results.tsv"
--->
 
 ## New Website
 
@@ -81,3 +107,5 @@ MT377503
 
 # Process/subsample for Nextstrain build
 ```
+
+-->
